@@ -19,3 +19,16 @@ Apakah sering menggunakan git? sering
   - daftar API endpoint ada di halaman bawah dari dokumen ini. 
   
 ## Cara instalasi scriptnya
+
+1. Pastikan node dan npm sudah terinstall 
+
+2. Lakukan git clone https://github.com/heriwahyudianto/jokolodang
+
+3. Pindah ke direktori "jokoloadang"
+
+4. Lalukan npm install
+
+5. Lakukan npm run start
+
+6. Akses dengan browser ke alamat http://localhost:3000/payments
+
