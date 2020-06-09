@@ -23,7 +23,7 @@ class PaymentEdit extends React.Component {
   }
 
   render() {
-    const payment = this.props.payment;
+    //const payment = this.props.payment;
     return (
       <div>
         <h1>Edit {this.props.payment.name}</h1>

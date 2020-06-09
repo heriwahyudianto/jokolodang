@@ -16,7 +16,6 @@ export const getPayments = () => {
   return (dispatch) => {
     return axios.get(`${apiUrl}`)                               
       .then(response => {
-        console.log('act get',response.data.data)
         dispatch({type: RECEIVE_PAYMENTS, payments: response.data.data})  
       })
       .catch(error => { throw(error); });
@@ -28,7 +27,6 @@ export const addPayment = ({ name }) => {
     return axios.post(`${apiUrl}`, {name})                                                
       .then(response => {
         let data = response.data;
-        console.log('add', data)
         dispatch({type: ADD_PAYMENT, payload: {id: data.id, name: data.name}})  
       })
       .then(() => {
@@ -42,7 +40,6 @@ export const getPayment = (id) => {
     return (dispatch) => {
       return axios.get(`${apiUrl}/${id}`)
         .then(response => {
-            console.log('act getPayment', response.data.data)
           dispatch({type: RECEIVE_PAYMENT, payment: response.data.data});
         })
         .catch(error => { 
@@ -68,18 +65,15 @@ export const deletePayment = (id) => {
 
 
 export const updatePayment = (payment) => {
-    console.log('edit',payment)
-    const paymentId = payment.id;
     return (dispatch) => {
       return axios.put(`${apiUrl}/${payment.id}`, {name: payment.name})
         .then(response => {
           const data = response.data;
-          console.log('edit', data)
           dispatch({type: UPDATE_PAYMENT, payload: {id: data.id, name: data.name}})
           dispatch({type: REPLACE_PAYMENT, payload: {id: data.id, name: data.name}})
         })
         .then(() => {
-          history.push(`/payments/${paymentId}`)
+          history.push(`/payments`)
         })
         .catch(error => { throw(error) });
     };
