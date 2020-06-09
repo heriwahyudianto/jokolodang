@@ -1,2 +1,21 @@
 # jokolodang
-Jawab pertanyaan berikut dengan singkat Apakah saat ini sedang bekerja? Apakah sanggup bekerja fulltime 8 jam perhari?  Project single page application apa saja yang pernah dikerjakan menggunakan react js? Apakah menguasai penggunaan redux? (ya/tidak/sedikit) Apakah sering menggunakan git? (sering/pernah/jarang)    Buat Single Page Application menggunakan React JS sesuai mockup dibawah  Spec: Saat ambil data, tambah, edit dan delete data, data disimpan juga ke redux di client. Untuk panggil api gunakan library thunk Mockup user interface dan daftar API endpoint ada di halaman bawah dari dokumen ini. Sertakan cara instalasi scriptnya secara singkat  Kriteria penilaian Aplikasi berjalan sesuai mockup dan spec Kerapian dan kualitas script/code Kecepatan mengerjakan
+###Jawab pertanyaan berikut dengan singkat 
+
+Apakah saat ini sedang bekerja? Tidak
+
+Apakah sanggup bekerja fulltime 8 jam perhari? sangggup
+
+Project single page application apa saja yang pernah dikerjakan menggunakan react js? belum pernah
+
+Apakah menguasai penggunaan redux? sedikit
+
+Apakah sering menggunakan git? sering
+
+### Buat Single Page Application 
+ 
+  - menggunakan React JS sesuai mockup 
+  - Spec: Saat ambil data, tambah, edit dan delete data, data disimpan juga ke redux di client. 
+  - Untuk panggil api gunakan library thunk Mockup user interface
+  - daftar API endpoint ada di halaman bawah dari dokumen ini. 
+  
+## Cara instalasi scriptnya
